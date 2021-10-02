@@ -1,0 +1,9 @@
+{
+  "pluginsFile": false,
+  "supportFile": "cypress/support/index.js",
+  "baseUrl": "https://www.tundra.com/search?q=*&c=USA",
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporter-config.json"
+  }
+}

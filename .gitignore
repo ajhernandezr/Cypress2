@@ -11,6 +11,6 @@
 /bin/
 /.classpath
 /.project
-/.videos
+**/videos/
 /node_modules/
 /.idea/

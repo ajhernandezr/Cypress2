@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-10-02T08:37:31.409Z",
+    "end": "2021-10-02T08:37:52.885Z",
+    "duration": 21476,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "eb1a8f5b-0f42-4306-ba51-c88c24faeab2",
+      "title": "",
+      "fullFile": "cypress\\integration\\Tests\\AddToCart.js",
+      "file": "cypress\\integration\\Tests\\AddToCart.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "df379df0-cd4c-4de2-b0b2-5f60db971da7",
+          "title": "Add to cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login the user",
+              "fullTitle": "Add to cart Login the user",
+              "timedOut": null,
+              "duration": 18082,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login(this.data.username, this.data.password);",
+              "err": {},
+              "uuid": "5c63c4be-b101-435e-8871-8c2b0a953d15",
+              "parentUUID": "df379df0-cd4c-4de2-b0b2-5f60db971da7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Add a Product to the cart",
+              "fullTitle": "Add to cart Add a Product to the cart",
+              "timedOut": null,
+              "duration": 3150,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.typeText('ItemQuantity', 10);\ncy.clickElementContains('Add to cart');",
+              "err": {},
+              "uuid": "c8a736b1-47e7-41db-afcd-6b9415dc1585",
+              "parentUUID": "df379df0-cd4c-4de2-b0b2-5f60db971da7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5c63c4be-b101-435e-8871-8c2b0a953d15",
+            "c8a736b1-47e7-41db-afcd-6b9415dc1585"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 21232,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

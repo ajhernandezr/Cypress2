@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-10-02T08:49:10.056Z",
+    "end": "2021-10-02T08:49:14.856Z",
+    "duration": 4800,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e8d5742b-afb9-48bc-8e16-429e29f0f487",
+      "title": "",
+      "fullFile": "cypress\\integration\\Tests\\NavigateProductPage.js",
+      "file": "cypress\\integration\\Tests\\NavigateProductPage.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a1f0189e-bc8c-4c1a-8859-eda734907493",
+          "title": "Navigate to product page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Navigate product page not logged",
+              "fullTitle": "Navigate to product page Navigate product page not logged",
+              "timedOut": null,
+              "duration": 4524,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.assertElement('Articles');\ncy.assertElementContains('Log in');\ncy.assertElementContains('Sign up');\ncy.assertElementNotVisible('ArticlePrices');",
+              "err": {},
+              "uuid": "aa2b9afa-eedd-4015-a8c7-c0ac103415a1",
+              "parentUUID": "a1f0189e-bc8c-4c1a-8859-eda734907493",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "aa2b9afa-eedd-4015-a8c7-c0ac103415a1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4524,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

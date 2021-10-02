@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-10-02T08:48:52.793Z",
+    "end": "2021-10-02T08:49:02.734Z",
+    "duration": 9941,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a08b02f0-c18b-4d7e-ba9d-8efad6b618a4",
+      "title": "",
+      "fullFile": "cypress\\integration\\Tests\\Login.js",
+      "file": "cypress\\integration\\Tests\\Login.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "19d60a1f-f915-4280-92c1-742bf4316a9d",
+          "title": "Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login the user",
+              "fullTitle": "Login Login the user",
+              "timedOut": null,
+              "duration": 9861,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login(this.data.username, this.data.password);\ncy.visit(\"https://www.tundra.com/search?q=*&c=USA\");",
+              "err": {},
+              "uuid": "62ed9678-b564-42fa-8417-8e84166c64e5",
+              "parentUUID": "19d60a1f-f915-4280-92c1-742bf4316a9d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "62ed9678-b564-42fa-8417-8e84166c64e5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9861,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

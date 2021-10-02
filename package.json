@@ -1,0 +1,35 @@
+{
+  "name": "cypress2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "cypress/results",
+    "overwrite": false,
+    "html": true,
+    "json": true
+  },
+  "dependencies": {
+    "cypress": "^5.4.0",
+    "mocha": "^5.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "./node_modules/.bin/cypress open",
+    "cy:run": "./node_modules/.bin/cypress run --spec 'cypress/integration/Tests/*.js'",
+    "delete:reports": "rimraf  cypress/results/* || true",
+    "report:merge": "mochawesome-merge  cypress/results/*/*.json -o cypress/report/output.json",
+    "report:generate": "marge cypress/report/output.json --reportDir ./ --inline",
+    "cy:all": "npm run delete:reports && cypress run --spec 'cypress/integration/Tests/*.js' && npm run report:merge && npm run report:generate"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress-multi-reporters": "^1.5.0",
+    "mochawesome": "^6.3.0",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0",
+    "rimraf": "^3.0.2"
+  }
+}
