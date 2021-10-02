@@ -1,0 +1,16 @@
+**/build/
+**/target/
+**/out/
+**/.idea/
+**/*.log
+**/classes/*.*
+**/.gradle/
+/target/
+/out/
+/.settings/
+/bin/
+/.classpath
+/.project
+/.videos
+/node_modules/
+/.idea/
