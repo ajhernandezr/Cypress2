@@ -32,12 +32,11 @@ Cypress.Commands.add('assertElementContains', (elementLocator) => {
     cy.contains(elementLocator).should('be.visible');
 });
 
-    Cypress.Commands.add('login', (username, password) => {
-        // cy.clickElement('Hamburgermenu');
-        cy.clickElementContains('Log in')
+Cypress.Commands.add('login', (username, password) => {
+    cy.clickElementContains('LOG IN')
 // // Fill the Login form with Credentials
-        cy.typeText('Email', username);
-        cy.typeText('Password', password);
-        cy.clickElement('SignInButton');
-        cy.wait(500)
-    });
+    cy.typeText('Email', username);
+    cy.typeText('Password', password);
+    cy.clickElement('SignInButton');
+    cy.wait(500)
+});

@@ -7,6 +7,12 @@ describe('Scroll', () => {
 
     it('Perform scroll and load more Products', function() {
         cy.scrollTo('bottom')
-        cy.clickElementContains('Load more products')
+
+        cy.assertElementContains('ProtonMail')
+        cy.assertElementContains('Features')
+        cy.assertElementContains('Features')
+        cy.assertElementContains('Company')
+        cy.assertElementContains('Social')
+
     })
 })

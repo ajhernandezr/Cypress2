@@ -15,7 +15,7 @@ Just for the demo, I pushed most of the files to the git repo, even if some of t
 ```
 npm install cypress --save-dev
 
-npm run cypress:open
+npm run cy:open
 
 # Cypress dashboard will be open and you can select the test to run
 # For running all test:
@@ -58,8 +58,3 @@ And add the following to the package.json file :
     "cy:all": "npm run delete:reports && cypress run --spec 'cypress/integration/Tests/*.js' && npm run report:merge && npm run report:generate"
   },
 ```
-## Bugs / Improvement founds
-
-Not a bug, probably its by design, but there is not Log In button in Responsive/Web mobile
-
-In price per unit, is possible to set 0 to 0

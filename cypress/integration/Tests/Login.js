@@ -13,7 +13,6 @@ describe('Login', () => {
 
     it('Login the user', function() {
         cy.login(this.data.username, this.data.password)
-        cy.visit("https://www.tundra.com/search?q=*&c=USA")
     })
 
 })
