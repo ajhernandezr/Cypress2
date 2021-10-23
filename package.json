@@ -21,11 +21,12 @@
     "delete:reports": "rimraf  cypress/results/* || true",
     "report:merge": "mochawesome-merge  cypress/results/*/*.json -o cypress/report/output.json",
     "report:generate": "marge cypress/report/output.json --reportDir ./ --inline",
-    "cy:all": "npm run delete:reports && cypress run --spec 'cypress/integration/Tests/*.js' && npm run report:merge && npm run report:generate"
+    "cy:all": "npm run delete:reports && cypress run --headless --spec 'cypress/integration/Tests/*.js' && npm run report:merge && npm run report:generate"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "cypress-audit": "^1.1.0",
     "cypress-multi-reporters": "^1.5.0",
     "mochawesome": "^6.3.0",
     "mochawesome-merge": "^4.2.0",
