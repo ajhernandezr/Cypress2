@@ -1,7 +1,7 @@
 var {Then, Given} = require('cucumber');
 var {When} = require('cucumber');
 
-When(/^user click the Login button$/, function () {
+When(/^user click the LoginPage button$/, function () {
     pom.clickElementContains
 });
 When(/^enter the credentials$/, function () {
