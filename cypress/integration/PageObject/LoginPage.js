@@ -1,8 +1,9 @@
 const commands = require('../../support/commands')
 
+const url = 'https://beta.protonmail.com/settings/label'
 class LoginPage {
     navigate() {
-        cy.visit('https://beta.protonmail.com/settings/label')
+        cy.visit(url);
         cy.location('pathname', {timeout: 6500}).should('include', 'login');
         cy.get('div[class="sign-layout-main-content"]').should('be.visible', { timeout: 6000 });
     }

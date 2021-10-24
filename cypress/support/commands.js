@@ -1,3 +1,6 @@
+import 'cypress-audit/commands';
+
+
 Cypress.Commands.add('clickElement', (elementLocator) => {
     cy.get(locators[elementLocator]).scrollIntoView().click(({force: true}))
 });

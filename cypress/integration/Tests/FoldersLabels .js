@@ -13,7 +13,7 @@ describe("Cypress POM Test Suite", function () {
         cy.location('pathname', {timeout: 25000}).should('include', '/inbox');
     })
 
-    //
+
     // it("Create and delete a folder", function () {
     //     const foldersLabel = new FoldersLabelsPageEx();
     //     const folders = new FoldersPageEx();
@@ -25,29 +25,29 @@ describe("Cypress POM Test Suite", function () {
     //     foldersLabel.deleteElement()
     // });
 
-    // it("Create and delete a folder with color", function () {
-    //     const foldersLabel = new FoldersLabelsPageEx();
-    //     const folders = new FoldersPageEx();
-    //     foldersLabel.navigate();
-    //     foldersLabel.checkPreviousElements(data.foldername)
-    //     foldersLabel.addFolder();
-    //     folders.createFolder(data.foldername);
-    //     folders.chooseColor(data.bluecolor)
-    //     folders.save(data.foldername);
-    //     foldersLabel.deleteElement()
-    // });
-
-    //
-    it("Create and delete a Label", function () {
+    it("Create and delete a folder with color", function () {
         const foldersLabel = new FoldersLabelsPageEx();
-        const labels = new LabelPageEx();
+        const folders = new FoldersPageEx();
         foldersLabel.navigate();
-        foldersLabel.checkPreviousElements(data.labelname)
-        foldersLabel.addLabel();
-        labels.createLabel(data.labelname)
-        labels.chooseColor(data.bluecolor)
-        labels.save(data.labelname)
+        foldersLabel.checkPreviousElements(data.foldername)
+        foldersLabel.changeFolderColors()
+        foldersLabel.addFolder();
+        folders.createFolder(data.foldername);
+        folders.chooseColor(data.bluecolor)
+        folders.save(data.foldername);
         foldersLabel.deleteElement()
     });
+
+    // it("Create and delete a Label", function () {
+    //     const foldersLabel = new FoldersLabelsPageEx();
+    //     const labels = new LabelPageEx();
+    //     foldersLabel.navigate();
+    //     foldersLabel.checkPreviousElements(data.labelname)
+    //     foldersLabel.addLabel();
+    //     labels.createLabel(data.labelname)
+    //     labels.chooseColor(data.bluecolor)
+    //     labels.save(data.labelname)
+    //     foldersLabel.deleteElement()
+    // });
 
 });

@@ -4,11 +4,6 @@ https://www.cypress.io/
 I had been using Selenium for around 7 years, but then I switched to Cypress and use it for some time.
 The reason for that is that compared with Selenium the test are much less flaky and faster.
 
-In the past I used Selenium with Cucumber, writing the tests in features and then implementing the code,
-so I tried to do the same in cypress using the cucumber preprocessor https://github.com/TheBrainFamily/cypress-cucumber-preprocessor , 
-but still not had the time for make it run, so only check the features and the implementation as a prototype, I deleted the preproccesor
-related config from the cypress json file.
-
 Just for the demo, I pushed most of the files to the git repo, even if some of them should be added to .gitignore.
 
 ## Installation / Running the test

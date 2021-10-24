@@ -31,7 +31,9 @@ class FoldersLabelsPage {
     }
 
     changeFolderColors() {
-        cy.clickElement('#folder-colors')
+        if (Cypress.$('label[class="toggle-label toggle-label--checked"]').length > 0) {
+            cy.get('#folder-colors').click()
+        }
     }
 
     deleteElement() {
