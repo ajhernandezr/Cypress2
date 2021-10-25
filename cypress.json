@@ -1,5 +1,6 @@
 {
   "pluginsFile": false,
+  "video": false, 
   "supportFile": "cypress/support/index.js",
   "baseUrl": "https://protonmail.com/",
   "reporter": "cypress-multi-reporters",
