@@ -20,7 +20,8 @@
     "cy:run": "./node_modules/.bin/cypress run --spec 'cypress/integration/Tests/*.js'",
     "delete:reports": "rimraf  cypress/results/* || true",
     "report:merge": "mochawesome-merge  cypress/results/*/*.json -o cypress/report/output.json",
-    "report:generate": "report:merge && marge cypress/report/output.json --reportDir ./ --inline",
+    "report:generate": "marge cypress/report/output.json --reportDir ./ --inline",
+    "cy:Postreports": "npm run report:merge && npm run report:generate",
     "cy:runTest": "npm run delete:reports ; cypress run --headless --spec 'cypress/integration/Tests/*.js'"
   },
   "author": "",
