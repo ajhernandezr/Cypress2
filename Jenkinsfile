@@ -36,7 +36,7 @@ pipeline {
     }
          post {
             always {
-                  sh 'npm run cy:reports'
+                  sh 'npm run cy:Postreports'
                   publishHTML([allowMissing:true, alwaysLinkToLastBuild: true, keepAll: false, reportDir:'', reportFiles: 'output.html', reportName: 'Cypress Report', reportTitles: ''])
          }
     }
