@@ -33,10 +33,11 @@ pipeline {
                 echo 'Deploying....'
             }
         }
+    }
          post {
             always {
-                  sh 'npm run report:generate'
+                  sh 'npm run cy:reports'
                   publishHTML([allowMissing:true, alwaysLinkToLastBuild: true, keepAll: false, reportDir:'', reportFiles: 'output.html', reportName: 'Cypress Report', reportTitles: ''])
          }
     }
-  }
+}
