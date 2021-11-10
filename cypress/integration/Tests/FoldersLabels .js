@@ -10,7 +10,6 @@ cy.visit("");
     })
      it("Contact with us ", function () {
          const foldersLabel = new FoldersLabelsPageEx();
-         const folders = new FoldersPageEx();
          foldersLabel.navigate();
      });
 
