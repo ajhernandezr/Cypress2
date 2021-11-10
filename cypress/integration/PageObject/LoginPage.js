@@ -1,6 +1,6 @@
 const commands = require('../../support/commands')
 
-const url = 'https://beta.protonmail.com/settings/label'
+const url = 'https://www.archlet.io/'
 class LoginPage {
     navigate() {
         cy.visit(url);
