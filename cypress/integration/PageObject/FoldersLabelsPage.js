@@ -7,9 +7,10 @@ cy.checkIfEleExists = function (selectAriaLabelRowsPerPage) {
 class FoldersLabelsPage {
 
     navigate() {
-        cy.get('a[title="Manage your folders"]').click()
-        cy.location('pathname', {timeout: 6500}).should('include', '/mail/folders-labels');
-        cy.assertElementContains('Folders & labels')
+                cy.get('#w-dropdown-toggle-0').click()
+                cy.get('a[href="/contact-us"][tabindex]').click()
+                cy.get('input[name="Name"]').type("Alberto")
+
     }
 
     checkPreviousElements(elementName) {
