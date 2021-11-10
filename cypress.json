@@ -2,7 +2,7 @@
   "pluginsFile": false,
   "video": false, 
   "supportFile": "cypress/support/index.js",
-  "baseUrl": "https://protonmail.com/",
+  "baseUrl": "https://www.archlet.io/",
   "reporter": "cypress-multi-reporters",
   "reporterOptions": {
     "configFile": "reporter-config.json"
