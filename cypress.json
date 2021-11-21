@@ -1,0 +1,10 @@
+{
+  "pluginsFile": false,
+  "video": false, 
+  "supportFile": "cypress/support/index.js",
+  "baseUrl": "https://www.cryptofinance.ch/",
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporter-config.json"
+  }
+}
