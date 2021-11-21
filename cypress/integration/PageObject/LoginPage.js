@@ -16,5 +16,4 @@ class LoginPage {
         cy.get('#loginButton').click()
     }
 }
-
 export const LoginPageEx = LoginPage;

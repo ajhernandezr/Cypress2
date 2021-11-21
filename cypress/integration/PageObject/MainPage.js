@@ -5,7 +5,6 @@ class MainPageTopHeader {
 
     getToMainPage(){
     cy.location('origin', {timeout: 6500}).should('include', 'cryptofinance.ch');
-
     }
 
     clickLogin() {

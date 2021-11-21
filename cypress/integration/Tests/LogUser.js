@@ -21,7 +21,6 @@ cy.visit("");
      loginPage.inputCredentials(data.username,data.password)
      loginPage.submit()
 
-
      });
 
 });
